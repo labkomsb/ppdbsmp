@@ -1,6 +1,6 @@
 <?php
 // sesuaikan nama kelas, tetap extends ke Controller
-class Home extends Controller
+class Sd extends Controller
 {
   // method default
   public function index()
