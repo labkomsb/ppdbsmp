@@ -1,0 +1,37 @@
+Tabel:
+-calonpd:
+nisn
+nama
+sandi
+jkel
+tplahir
+tglahir
+sd
+smp
+nbin
+nmat
+nipa
+alamat
+verifikasi
+
+-sltp
+npsn
+nama
+alamat
+kecamatan
+password
+quota
+
+Halaman yg dibuat
+localhost/ppdbsmp/public                - halaman utama
+localhost/ppdbsmp/public/cpd/           - halaman utama calon peserta didik
+localhost/ppdbsmp/public/cpd/login      - halaman login calon peserta didik
+localhost/ppdbsmp/public/cpd/form       - formulir isian calon peserta didik
+localhost/ppdbsmp/public/cpd/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/smp/           - halaman utama sltp
+localhost/ppdbsmp/public/smp/login      - halamanlogin smp
+localhost/ppdbsmp/public/smp/registrasi - halaman registrasi smp
+localhost/ppdbsmp/public/smp/pendaftar  - data pendaftar
+localhost/ppdbsmp/public/smp/pendaftar/detil/nisn   - halaman detil
+localhost/ppdbsmp/public/smp/verifikasi - halaman verifikasi berkas
+localhost/ppdbsmp/public/smp/jurnal     - peringkat seleksi
