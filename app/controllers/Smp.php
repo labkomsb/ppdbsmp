@@ -1,6 +1,6 @@
 <?php
 // sesuaikan nama kelas, tetap extends ke Controller
-class SMP extends Controller
+class Smp extends Controller
 {
   // method default
   public function index()
