@@ -5,6 +5,7 @@ class Cpd extends Controller
   // method default
   public function index()
   {
+    $this->view('cpd/index');
     // membambil dara dari model Model
     /*
     $data['xxx'] = $this->model('Model_xxx')->method();
