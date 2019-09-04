@@ -22,4 +22,8 @@ class Cpd extends Controller
     $this->view('template/footer');
     */
   }
+  public function login()
+  {
+    $this->view('cpd/login');
+  }
 }
