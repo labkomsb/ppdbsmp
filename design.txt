@@ -35,3 +35,8 @@ localhost/ppdbsmp/public/smp/pendaftar  - data pendaftar
 localhost/ppdbsmp/public/smp/pendaftar/detil/nisn   - halaman detil
 localhost/ppdbsmp/public/smp/verifikasi - halaman verifikasi berkas
 localhost/ppdbsmp/public/smp/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/Sd             - halaman data SD
+
+
+Tabel jurnal
+Rank | NISN | Nama | Bahasa Indonesia | Matematika | IPA | Jumlah | Jarak | Skor
