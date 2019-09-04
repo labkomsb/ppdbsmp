@@ -22,4 +22,15 @@ class Cpd extends Controller
     $this->view('template/footer');
     */
   }
+
+
+  public function form(){
+    $this->view('cpd/form');
+  // method default
+  }
+  
+  public function jurnal()
+  {
+    $this->view('cpd/jurnal');
+  }
 }
