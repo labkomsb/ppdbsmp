@@ -23,7 +23,11 @@ class Cpd extends Controller
     */
   }
 
-
+  public function login()
+  {
+    $this->view('cpd/login');
+  }
+  
   public function form(){
     $this->view('cpd/form');
   // method default
