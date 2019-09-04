@@ -22,4 +22,11 @@ class SMP extends Controller
     $this->view('template/footer');
     */
   }
+
+  // method default
+  public function login()
+  {
+      $this->view('smp/login');
+    
+  }
 }
