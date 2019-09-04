@@ -10,7 +10,7 @@
     <td><input type="password" name="pasword" id="password"></td>
     </tr>
     <tr>
-    <td>Login</td>
+    <td><button id="login" onclick=login()>login</button></td>
     </tr>
 </table>
 

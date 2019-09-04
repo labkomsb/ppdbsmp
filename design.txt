@@ -1,11 +1,11 @@
 Tabel:
 -calonpd:
+namaKolom tipeForm TipeData Length
 nisn
 nama
 sandi
 jkel
 tplahir
-tglahir
 sd
 smp
 nbin
