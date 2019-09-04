@@ -1,11 +1,11 @@
 Tabel:
 -calonpd:
+namaKolom tipeForm TipeData Length
 nisn
 nama
 sandi
 jkel
 tplahir
-tglahir
 sd
 smp
 nbin
@@ -24,6 +24,7 @@ quota
 
 Halaman yg dibuat
 localhost/ppdbsmp/public                - halaman utama
+<<<<<<< HEAD
 localhost/ppdbsmp/public/cpd/           - halaman utama calon peserta didik
 localhost/ppdbsmp/public/cpd/login      - halaman login calon peserta didik
 localhost/ppdbsmp/public/cpd/form       - formulir isian calon peserta didik
@@ -35,7 +36,29 @@ localhost/ppdbsmp/public/smp/pendaftar  - data pendaftar
 localhost/ppdbsmp/public/smp/pendaftar/detil/nisn   - halaman detil
 localhost/ppdbsmp/public/smp/verifikasi - halaman verifikasi berkas
 localhost/ppdbsmp/public/smp/jurnal     - peringkat seleksi
+<<<<<<< HEAD
 localhost/ppdbsmp/public/Sd             - halaman data Sd
 
 Tabel jurnal
 Rank | NISN | Nama | Bhs Indonesia | Matematika | IPA | jumlah | Jarak | Skor
+=======
+localhost/ppdbsmp/public/Sd             - halaman data SD
+
+=======
+localhost/ppdbsmp/public/Cpd/           - halaman utama calon peserta didik
+localhost/ppdbsmp/public/Cpd/login      - halaman login calon peserta didik
+localhost/ppdbsmp/public/Cpd/form       - formulir isian calon peserta didik
+localhost/ppdbsmp/public/Cpd/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/Smp/           - halaman utama sltp
+localhost/ppdbsmp/public/Smp/login      - halamanlogin smp
+localhost/ppdbsmp/public/Smp/registrasi - halaman registrasi smp
+localhost/ppdbsmp/public/Smp/pendaftar  - data pendaftar
+localhost/ppdbsmp/public/Smp/pendaftar/detil/nisn   - halaman detil
+localhost/ppdbsmp/public/Smp/verifikasi - halaman verifikasi berkas
+localhost/ppdbsmp/public/Smp/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/Sd             - halaman sd
+>>>>>>> ab07bb529297697986850d4d6b4ee536b3782d96
+
+Tabel jurnal
+Rank | NISN | Nama | Bahasa Indonesia | Matematika | IPA | Jumlah | Jarak | Skor
+>>>>>>> c63f5a11f1e04c7812d9ec946aef8d7c85a53e1e
