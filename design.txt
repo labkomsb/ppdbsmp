@@ -1,17 +1,18 @@
 Tabel:
 -calonpd:
-nisn
-nama
-sandi
-jkel
-tplahir
-tglahir
-sd
-smp
-nbin
-nmat
-nipa
-alamat
+namaKolom   tipeForm    tipeData length
+nisn        - text
+nama        - text
+sandi       - password
+jkel        - select
+tplahir     - text
+tglahir     - date
+sd          - text
+smp         - text
+nbin        - text
+nmat        - text
+nipa        - text
+alamat      - textarea
 verifikasi
 
 -sltp
@@ -24,14 +25,19 @@ quota
 
 Halaman yg dibuat
 localhost/ppdbsmp/public                - halaman utama
-localhost/ppdbsmp/public/cpd/           - halaman utama calon peserta didik
-localhost/ppdbsmp/public/cpd/login      - halaman login calon peserta didik
-localhost/ppdbsmp/public/cpd/form       - formulir isian calon peserta didik
-localhost/ppdbsmp/public/cpd/jurnal     - peringkat seleksi
-localhost/ppdbsmp/public/smp/           - halaman utama sltp
-localhost/ppdbsmp/public/smp/login      - halamanlogin smp
-localhost/ppdbsmp/public/smp/registrasi - halaman registrasi smp
-localhost/ppdbsmp/public/smp/pendaftar  - data pendaftar
-localhost/ppdbsmp/public/smp/pendaftar/detil/nisn   - halaman detil
-localhost/ppdbsmp/public/smp/verifikasi - halaman verifikasi berkas
-localhost/ppdbsmp/public/smp/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/Cpd/           - halaman utama calon peserta didik
+localhost/ppdbsmp/public/Cpd/login      - halaman login calon peserta didik
+localhost/ppdbsmp/public/Cpd/form       - formulir isian calon peserta didik
+localhost/ppdbsmp/public/Cpd/jurnal     - peringkat seleksi
+localhost/ppdbsmp/public/Smp/           - halaman utama sltp
+localhost/ppdbsmp/public/Smp/login      - halamanlogin smp
+localhost/ppdbsmp/public/Smp/registrasi - halaman registrasi smp
+localhost/ppdbsmp/public/Smp/pendaftar  - data pendaftar
+localhost/ppdbsmp/public/Smp/pendaftar/detil/nisn   - halaman detil
+localhost/ppdbsmp/public/Smp/verifikasi - halaman verifikasi berkas
+localhost/ppdbsmp/public/Smp/jurnal     - peringkat seleksi
+localhost/ppdbsmp/pubic/Sd              - halaman data SD
+
+
+Tabel jurnal
+Rank | NISN | Nama | Bhs Indonesia | Matematika | IPA | Jumlah | Jarak | Skor
