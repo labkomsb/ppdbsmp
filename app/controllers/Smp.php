@@ -29,4 +29,9 @@ class Smp extends Controller
       $this->view('smp/login');
     
   }
+  
+  public function jurnal ()
+  {
+    $this->view('smp/jurnal');
+  }
 }
