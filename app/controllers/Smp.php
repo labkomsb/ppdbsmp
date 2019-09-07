@@ -26,16 +26,13 @@ class Smp extends Controller
   // method default
   public function login()
   {
-      $this->view('smp/login'); 
+      $this->view('smp/login');
+    
   }
-<<<<<<< HEAD
-
-  
-=======
   
   public function jurnal ()
   {
     $this->view('smp/jurnal');
   }
->>>>>>> 6d5f00fc2f07f6c65b7da00f583a68082a475d12
-}
+
+  }

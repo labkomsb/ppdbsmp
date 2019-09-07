@@ -18,6 +18,9 @@
             <input type="password" name="password" id="password"><br/>
             </td>
         </tr>
+        <tr>
+    <td><button id="login" onclick=login()>login</button></td>
+    </tr>
     </table>
     
    
