@@ -22,4 +22,14 @@ class Home extends Controller
     $this->view('template/footer');
     */
   }
+  public function form()
+    {
+    $this->view('cpd/form');
+  }
+  public function jurnal (){
+    $this->view('cpd/jurnal');
+  }
+  public function login(){
+    $this->view('cpd/login');
+  }
 }
