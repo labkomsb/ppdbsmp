@@ -23,29 +23,30 @@
 
         <!--input teks untuk tanggal lahir-->
         <label for="tglahir">Tanggal Lahir</label>
-        <input type="date" name="tglahir" id="tglahir">
+        <input type="date" name="tglahir" id="tglahir"><br/>
 
         <!--input teks untuk sd-->
         <label for="sd">SD</label>
-        <input type="text" name="sd" id="sd">
+        <input type="text" name="sd" id="sd"><br/>
 
         <!--input teks untuk smp-->
         <label for="smp">SMP</label>
-        <input type="text" name="smp" id="smp">
+        <input type="text" name="smp" id="smp"><br/>
 
         <!--input teks untuk nilai b.indonesia-->
         <label for="nbin">Nilai Bahasa indonesia</label>
-        <input type="text" name="nbin" id="nbin">
+        <input type="text" name="nbin" id="nbin"><br/>
 
         <!--input teks untuk nilai matematika-->
         <label for="nmat">Nilai Matematika</label>
-        <input type="text" name="nmat" id="nmat">
+        <input type="text" name="nmat" id="nmat"><br/>
 
         <!--input teks untuk nilai IPA-->
         <label for="nipa">Nilai IPA</label>
-        <input type="text" name="nipa" id="nipa">
+        <input type="text" name="nipa" id="nipa"><br/>
 
         <!--input teks untuk alamat-->
         <label for="alamat">Alamat</label>
-        <input type="text" name="alamat" id="alamat">
+        <input type="text" name="alamat" id="alamat"><br/>
+        
     </form>

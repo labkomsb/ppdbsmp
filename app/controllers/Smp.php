@@ -35,4 +35,4 @@ class Smp extends Controller
     $this->view('smp/jurnal');
   }
 
-  }
+}
