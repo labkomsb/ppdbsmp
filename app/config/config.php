@@ -6,9 +6,9 @@
   // nama host database
   DEFINE ('dbhost', 'localhost');
   // nama database
-  DEFINE ('klubaner_ppdbskb', "ppdb");
+  DEFINE ('dbname', 'klubaner_ppdbskb');
   // namaUserDatabase
-  DEFINE ('klubaners_wdc2019', "userppdb");
+  DEFINE ('dbuser' , 'klubaner_wdc2019');
   // passwordDatabase
   // disarankan : password terdiri dari huruf kecil, huruf kapital, angka dan tanda baca
-  DEFINE ('Skb84n74r', "ppdb2020");
+  DEFINE ('dbpass','Skb84n74r');
