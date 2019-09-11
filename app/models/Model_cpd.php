@@ -12,7 +12,7 @@ class Model_template
     // tambah calon peserta didik
     public function cpdTambah($data){
         // tulis perintah insert
-        $sql = "INSERT INTO cpd SET nisn = :nisn , 	nama = :nama ,	sandi = :md5sandi	, jkel = :jnkel	, tplahir	= :tplahir , tglahir = :tglahir ,	sd = :npsnsd	, smp = :npsnsmp ,	nbin = :nbin ,	nmat = :nmat ,	nipa	= :nipa , alamat = :alamat";
+        $sql = "INSERT INTO cpd SET nama = :nama ,	sandi = :md5sandi	, jkel = :jnkel	, tplahir	= :tplahir , tglahir = :tglahir ,	sd = :npsnsd	, smp = :npsnsmp ,	nbin = :nbin ,	nmat = :nmat ,	nipa	= :nipa , alamat = :alamat , nisn = :nisn";
 
         // buat query
         $this->db->query($sql);
