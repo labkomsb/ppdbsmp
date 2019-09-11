@@ -14,6 +14,7 @@ class Model_template
         /*
         $sql = "sebuah query ke sql. Misal: INSERT INTO tabel
         VALUES ( :kolom1 , :kolom2 , :kolom3 , :kolomX) "
+        
         $this->db->query($sql);
 
         // binding data, mengamankan karakter aneh
