@@ -17,10 +17,12 @@ class Model_template
         // buat query
         $this->db->query($sql);
 
+        $md5sandi = md5($data['nisn']."*".$data['sandi']);
+
         // binding data
         $this->db->bind('nisn' , $data['nisn']);
         $this->db->bind('nama' , $data['nama']);
-        $this->db->bind('md5sandi' , $data['']);
+        $this->db->bind('md5sandi' , $md5sandi);
         $this->db->bind('jnkel' , $data['jnKel']);
         $this->db->bind('tplahir' , $data['tplahir']);
         $this->db->bind('tglahir' , $data['tglahir']);
