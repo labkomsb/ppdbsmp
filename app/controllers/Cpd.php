@@ -33,6 +33,12 @@ class Cpd extends Controller
   // method default
   }
   
+  public function baru(){
+    $this->view('cpd/cpd-baru');
+    $this->model('Model_cpd')->cpdTambah($_POST);
+  // method default
+  }
+
   public function jurnal()
   {
     $this->view('cpd/jurnal');

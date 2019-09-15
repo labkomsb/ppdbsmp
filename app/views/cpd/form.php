@@ -1,4 +1,4 @@
-<form action="#">
+<form action="<?=BASEURL;?>Cpd/baru" method="post">
         <!--input teks untuk nisn-->
         <label for="nisn">NISN</label>
         <input type="text" name="nisn" id="nisn"><br/>
@@ -16,6 +16,7 @@
         <select name="jnKel" id="jnKel">
             <option value="L">Laki - Laki</option>
             <option value="P">Perempuan</option>
+        </select><br>
        
         <!--input teks untuk tplahir-->
         <label for="tplahir">Tempat Lahir</label>
@@ -49,4 +50,5 @@
         <label for="alamat">Alamat</label>
         <input type="text" name="alamat" id="alamat"><br/>
         
+        <input type="submit" value="Daftar !">
     </form>

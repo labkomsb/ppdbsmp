@@ -1,5 +1,5 @@
 <?php
-class Model_template
+class Model_cpd
 {
     private $table = "cpd";
     private $db;
@@ -32,7 +32,7 @@ class Model_template
         $this->db->bind('nmat' , $data['nmat']);
         $this->db->bind('nipa' , $data['nipa']);
         $this->db->bind('alamat' , $data['alamat']);
-
+        
         //eksekusi
         $this->db->execute();
 
