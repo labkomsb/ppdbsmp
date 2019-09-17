@@ -34,8 +34,12 @@ class Cpd extends Controller
   }
   
   public function baru(){
-    $this->view('cpd/cpd-baru');
-    $this->model('Model_cpd')->cpdTambah($_POST);
+    // $this->view('cpd/cpd-baru');
+    if ( $this->model('Model_cpd')->cpdTambah($_POST) > 0 ){
+      header("Location:".BASEURL."cpd/");
+    }else{
+      echo "Pendaftaran Gagal";
+    }
   // method default
   }
 
