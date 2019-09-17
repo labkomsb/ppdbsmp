@@ -28,7 +28,9 @@
 
         <!--input teks untuk sd-->
         <label for="sd">SD</label>
-        <input type="text" name="sd" id="sd"><br/>
+        <input type="text" name="sd" id="sd" list="datasd">
+        <datalist id="datasd"></datalist>
+        <br/>
 
         <!--input teks untuk smp-->
         <label for="smp">SMP</label>
@@ -52,3 +54,30 @@
         
         <input type="submit" value="Daftar !">
     </form>
+
+<?php $this->view('template/jquery'); ?>
+
+<script>
+
+$(document).ready( function(){
+    $("#sd").keyup( function(){
+        // let namaSD = $("#sd").val();
+        let namaSD = $(this).val();
+        $.getJSON(
+            `https://sarpras.dindikpora.banjarnegarakab.go.id/sd/datasources/Sekolah/sekolahCari/${namaSD}` , function(namasd){
+                // bersihkan elemen dengan id=datasd dari komponen option
+                $("#datasd option").remove();
+
+                // baca satu per satu variabel namasd
+                $.each( namasd , function(i,data){
+                    // tambahkan option berisi npsn dan nama sd ke datalist datasd
+                    $("#datasd").append(`
+                    <option value='${data.npsn}'>${data.nama}</option>
+                    `);
+                })
+            }
+        )
+    })
+})
+
+</script>
