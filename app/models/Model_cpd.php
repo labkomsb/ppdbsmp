@@ -32,7 +32,7 @@ class Model_cpd
         $this->db->bind('nmat' , $data['nmat']);
         $this->db->bind('nipa' , $data['nipa']);
         $this->db->bind('alamat' , $data['alamat']);
-
+        
         //eksekusi
         $this->db->execute();
 

@@ -33,6 +33,16 @@ class Cpd extends Controller
   // method default
   }
   
+  public function baru(){
+    // $this->view('cpd/cpd-baru');
+    if ( $this->model('Model_cpd')->cpdTambah($_POST) > 0 ){
+      header("Location:".BASEURL."cpd/");
+    }else{
+      echo "Pendaftaran Gagal";
+    }
+  // method default
+  }
+
   public function jurnal()
   {
     $this->view('cpd/jurnal');
