@@ -23,6 +23,33 @@ kecamatan
 password
 quota
 
+// skrip mysql pembuatan Tabel
+-- tabel cpd
+CREATE TABLE `cpd` (
+  `nisn` int(10) UNSIGNED NOT NULL,
+  `nama` varchar(30) DEFAULT NULL,
+  `sandi` varchar(32) DEFAULT NULL,
+  `jkel` enum('L','P') DEFAULT 'L',
+  `tplahir` varchar(20) DEFAULT NULL,
+  `tglahir` date DEFAULT NULL,
+  `sd` int(8) UNSIGNED DEFAULT NULL,
+  `smp` int(8) UNSIGNED DEFAULT NULL,
+  `nbin` float(6,2) DEFAULT '0.00',
+  `nmat` float(6,2) DEFAULT '0.00',
+  `nipa` float(6,2) DEFAULT '0.00',
+  `alamat` tinytext,
+  `verifikasi` enum('1','0') DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `smp`(
+    `npsn` int(8) not null primary key,
+    `nama` varchar(50),
+    `alamat` tinytext,
+    `kecamatan` varchar (20),
+    `password` varchar(32),
+    `quota` int(3)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;;
+
 Halaman yg dibuat
 localhost/ppdbsmp/public                - halaman utama
 localhost/ppdbsmp/public/cpd/           - halaman utama calon peserta didik

@@ -34,5 +34,16 @@ class Smp extends Controller
   {
     $this->view('smp/jurnal');
   }
+  
+
+  public function registrasi(){
+    $this->view('smp/registrasi');
+  }
+
+  public function baru(){
+    if( $this->model('Model_smp')->registrasi($_POST) > 0 ){
+      header("Location:".BASEURL."smp");
+    }
+  }
 
 }
