@@ -37,4 +37,11 @@ class Cpd extends Controller
   {
     $this->view('cpd/jurnal');
   }
+
+  public function baru ()
+  {
+    $this->view('cpd/cpdBaru');
+    $this->model('Model_cpd')->cpdTambah($_POST);
+  }
+
 }

@@ -1,5 +1,5 @@
 <?php
-class Model_template
+class Model_cpd
 {
     private $table = "cpd";
     private $db;
