@@ -34,6 +34,7 @@ class Smp extends Controller
   {
     $this->view('smp/jurnal');
   }
+  
 
   public function registrasi(){
     $this->view('smp/registrasi');

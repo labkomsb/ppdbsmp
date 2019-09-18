@@ -47,7 +47,7 @@
             <tr>
                 <td>Periksa Data</td>
                 <td>
-                    <input type="submit" value="Registrasi">
+                    <input type="submit" value="Registrasi">g
                 </td>
             </tr>
         </tbody>
