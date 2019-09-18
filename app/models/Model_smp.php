@@ -29,6 +29,27 @@ class Model_smp
         return $output;
 
     }
-
+public function registrasi($data){
+    $sql = 
 }
+public function ubahProfil($data){
+    $sql = "UPDATE smp SET nama = :nama ,	alamat = :alamat , kecamatan = :kecamatan , quota = :quota , WHERE npsn = :npsn";
 
+    $this->db->query($sql);
+
+   
+    $this->db->bind('nama' , $data['nama']);
+    $this->db->bind('alamat' , $data['alamat']);
+    $this->db->bind('kecamatan' , $data['kecamatan']);
+    $this->db->bind('quota' , $data['quota']);
+    $this->db->bind('npsn' , $data['npsn']);
+
+    $this->db->execute();
+
+    return $this->db->rowCount();
+}
+public function gantiPassword($data){
+    $sql =
+    $md5password = md5($data['npsn']."*".$data['password']); 
+}
+}
