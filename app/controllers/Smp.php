@@ -45,5 +45,9 @@ class Smp extends Controller
       header("Location:".BASEURL."smp");
     }
   }
+  public function otorisasi(){
+    $this->view('smp/otorisasi');
+
+  }
 
 }

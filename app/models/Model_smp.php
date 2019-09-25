@@ -31,7 +31,7 @@ class Model_smp
     }
 
     public function registrasi($data){
-        $sql = "INSERT INTO smp SET nama = :nama ,	alamat = :alamat , kecamatan = :kecamatan , password = :md5pasword , quota = :quota , npsn = :npsn";
+        $sql = "INSERT INTO smp SET nama = :nama ,	alamat = :alamat , kecamatan = :kecamatan , password = :md5password , quota = :quota , npsn = :npsn";
 
         $this->db->query($sql);
 
@@ -69,5 +69,18 @@ class Model_smp
     public function gantiPassword($data){
         $sql =
         $md5password = md5($data['npsn']."*".$data['password']); 
+    }
+    
+    public function login ($data){
+        $md5password=md5($data['npsn']."_".$data['password']);
+        $sql="SELECT * from smp where password=:md5password";
+        $this->db->query($sql);
+        $this->db->bind('md5password' , $md5password);
+        $this->db->execute();
+        $baris=$this->db->rowcount();
+        $login=$this->db->resultone();
+
+        return array('rows'=>$baris , 'data'=>$login);
+
     }
 }
