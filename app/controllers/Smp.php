@@ -49,5 +49,7 @@ class Smp extends Controller
     $this->view('smp/otorisasi');
 
   }
-
+  public function ganti password(){
+    $this->model('Model_smp')->gantiPassword($data);
+  }
 }
